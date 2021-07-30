@@ -6,7 +6,6 @@ using UnityEngine;
 public class TransformMove : MonoBehaviour
 {
     private Rigidbody selfRigidbody;
-
     private void Start()
     {
         selfRigidbody = GetComponent<Rigidbody>();
@@ -142,11 +141,14 @@ public class TransformMove : MonoBehaviour
     /// <param name="cacheRaycastHit"></param>
     private void IsOnGroundUpdate(Vector3 groundPoint, float length, ref RaycastHit cacheRaycastHit)
     {
+        Debug.Log("开始检测地面"+_Const.LAYER_GROUND);
         //遍历所有地面检测点 
         var hit = default(RaycastHit);
+        Debug.DrawRay(groundPoint, Vector3.down*100, Color.red, 100);
         if (Physics.Raycast(new Ray(groundPoint, Vector3.down), out hit, length, _Const.LAYER_GROUND)) //射线检测
         {
             cacheRaycastHit = hit;
+            Debug.Log(hit.collider.name);
         }
     }
 }
