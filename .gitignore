@@ -62,6 +62,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 /Library/
+/FraneworkDesign/
 /Logs/
 /UserSettings/
 /.idea/
