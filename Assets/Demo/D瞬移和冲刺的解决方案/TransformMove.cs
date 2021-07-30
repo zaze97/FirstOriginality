@@ -27,6 +27,7 @@ public class TransformMove : MonoBehaviour
         if (GUILayout.Button("冲刺", GUILayout.Width(100), GUILayout.Height(30)))
         {
             StartCoroutine(DashTo(this.transform, this.transform.position + this.transform.forward * 5));
+            //StartCoroutine(DashTo(selfRigidbody, this.transform.position + this.transform.forward * 5,5f));
         }
     }
 
@@ -40,6 +41,30 @@ public class TransformMove : MonoBehaviour
         trans.position = SweepTest(trans, dstPoint);
     }
 
+    IEnumerator DashTo(Rigidbody rigidbody, Vector3 dstPoint, float speed)
+    {
+        //trans是正在瞬移的对象，dstPoint是目标点。
+        dstPoint = GetGroundPoint(dstPoint);//此处为自定义函数，修正到准确的地面位置
+
+        var waitForFixedUpdate = new WaitForFixedUpdate();
+        var beginTime = Time.fixedTime;//此处是物理更新时序。
+        for (var duration = 1.15f; Time.fixedTime - beginTime <= duration;)
+        {
+            var t = (Time.fixedTime - beginTime) / duration;
+            t = t * t;//逐渐加速缓动
+
+            rigidbody.velocity = (dstPoint - rigidbody.position).normalized * speed;
+            yield return waitForFixedUpdate;
+        }
+    }
+
+    Vector3 GetGroundPoint(Vector3 referencePoint)
+    {
+        return referencePoint;
+    }
+    
+    
+    
     /// <summary>
     /// 冲刺 冲刺受碰撞影响
     /// </summary>

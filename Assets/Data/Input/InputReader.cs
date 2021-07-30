@@ -26,7 +26,7 @@ public class InputReader : ScriptableObject, MyInputSystem.InputControls.IGameAc
     }
     public void EnableGameplayInput()
     {
-        //当前开启别的结束，只存在一个操作系统
+        //当前开启别的结束，只存在一个操作系统//当有别的系统时要添加进来
         gameInput.Game.Enable();
     }
     public void DisableAllInput()
