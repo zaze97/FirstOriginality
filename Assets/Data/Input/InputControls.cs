@@ -27,6 +27,14 @@ namespace MyInputSystem
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": ""StickDeadzone"",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""9731deac-7b2c-44b2-a362-968cb1395318"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": ""StickDeadzone"",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -139,6 +147,17 @@ namespace MyInputSystem
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""04202398-89da-4a3c-bc38-2aed4c1a46dd"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -148,6 +167,7 @@ namespace MyInputSystem
             // Game
             m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
             m_Game_Move = m_Game.FindAction("Move", throwIfNotFound: true);
+            m_Game_Jump = m_Game.FindAction("Jump", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -198,11 +218,13 @@ namespace MyInputSystem
         private readonly InputActionMap m_Game;
         private IGameActions m_GameActionsCallbackInterface;
         private readonly InputAction m_Game_Move;
+        private readonly InputAction m_Game_Jump;
         public struct GameActions
         {
             private @InputControls m_Wrapper;
             public GameActions(@InputControls wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Game_Move;
+            public InputAction @Jump => m_Wrapper.m_Game_Jump;
             public InputActionMap Get() { return m_Wrapper.m_Game; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -215,6 +237,9 @@ namespace MyInputSystem
                     @Move.started -= m_Wrapper.m_GameActionsCallbackInterface.OnMove;
                     @Move.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnMove;
                     @Move.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnMove;
+                    @Jump.started -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
+                    @Jump.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
+                    @Jump.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
                 }
                 m_Wrapper.m_GameActionsCallbackInterface = instance;
                 if (instance != null)
@@ -222,6 +247,9 @@ namespace MyInputSystem
                     @Move.started += instance.OnMove;
                     @Move.performed += instance.OnMove;
                     @Move.canceled += instance.OnMove;
+                    @Jump.started += instance.OnJump;
+                    @Jump.performed += instance.OnJump;
+                    @Jump.canceled += instance.OnJump;
                 }
             }
         }
@@ -229,6 +257,7 @@ namespace MyInputSystem
         public interface IGameActions
         {
             void OnMove(InputAction.CallbackContext context);
+            void OnJump(InputAction.CallbackContext context);
         }
     }
 }

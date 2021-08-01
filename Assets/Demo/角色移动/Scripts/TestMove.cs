@@ -2,8 +2,6 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace ACTBook
-{
     public class TestMove : MonoBehaviour
     {
         public Animator animator;
@@ -193,4 +191,4 @@ namespace ACTBook
             groundPoints[groundPoints.Length - 1] = temp;//交换地面检测点，防止每次顺序都一样。
         }
     }
-}
+

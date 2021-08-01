@@ -8,6 +8,9 @@ using UnityEngine.InputSystem;
 public class InputReader : ScriptableObject, MyInputSystem.InputControls.IGameActions
 {
     public event UnityAction<Vector2> MoveSelectionEvent = delegate { };
+    public event UnityAction<bool> JumpStartedEvent = delegate { };
+    public event UnityAction JumpPerformedEvent = delegate { };
+    public event UnityAction JumpCanceledEvent = delegate { };
     private InputControls gameInput;
     private void OnEnable()
     {
@@ -38,5 +41,21 @@ public class InputReader : ScriptableObject, MyInputSystem.InputControls.IGameAc
     {
         if (context.phase == InputActionPhase.Performed)
             MoveSelectionEvent.Invoke(context.ReadValue<Vector2>());
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started) //按下，相当于GetKeyDown
+        {
+            JumpStartedEvent.Invoke(context.started);
+        }
+        if (context.phase == InputActionPhase.Performed) //按下，相当于GetKey
+        {
+            JumpPerformedEvent.Invoke();
+        }
+        if (context.phase == InputActionPhase.Canceled) //按下，相当于GetKeyUp
+        {
+            JumpCanceledEvent.Invoke();
+        }
     }
 }
