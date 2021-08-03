@@ -12,19 +12,10 @@ using Random = UnityEngine.Random;
         public LayerMask groundLayerMask = ~0;//地面LayerMask
         public LayerMask wallLayerMask = ~0;//墙壁LayerMask
         int mIsMoveAnimatorHash;//移动Animator变量哈希
-        [SerializeField] private InputReader _inputReader;
         private Vector2 movement;
         public bool IsMoving { get; private set; }
         public Vector3 MoveDirection { get; private set; }
 
-        private void OnEnable()
-        {
-            _inputReader.MoveSelectionEvent += OnMove;
-        }
-        private void OnDisable()
-        {
-            _inputReader.MoveSelectionEvent -= OnMove;
-        }
 
         private void Update()
         {
@@ -35,13 +26,13 @@ using Random = UnityEngine.Random;
         {
 
             const float INPUT_EPS = 0.2f;
-            var horizontal = movement.x;//横向轴的值
-            var vertical = movement.y;//纵向轴的值
+            var horizontal =Input.GetAxis("Mouse X");//横向轴的值
+            var vertical = Input.GetAxis("Mouse Y");//纵向轴的值
             var inputDirection = new Vector3(horizontal, 0f, vertical);//输入向量
             var upAxis = -Physics.gravity.normalized;//up轴向
             var moveDirection = CameraDirectionProcess(inputDirection, upAxis);//相机输入方向修正
             MoveDirection = moveDirection;
-            Debug.Log(inputDirection.magnitude);
+    //        Debug.Log(inputDirection.magnitude);
             if (inputDirection.magnitude > INPUT_EPS)//是否有输入方向
             {
                 Debug.Log("开始移动");

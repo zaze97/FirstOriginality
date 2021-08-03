@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TestJump : MonoBehaviour
 {
-    [SerializeField] private InputReader _inputReader;
     public Animator animator;                         //自身动画组件
     public Rigidbody selfRigidbody;                //自身刚体组件
     public TestMove testMove;                          //之前的移动脚本
@@ -20,33 +19,19 @@ public class TestJump : MonoBehaviour
     float mGroundedDelay;                               //延迟检测变量
     bool mIsGrounded;                                    //是否正在地面上
     Coroutine mJumpCoroutine;                          //跳跃协程序
-    private bool isStarted;
-    private void OnEnable()
-    {
-        _inputReader.JumpStartedEvent += OnJumpStarted;
-    }
-
-    private void OnJumpStarted(bool Started)
-    {
-        isStarted = Started;
-        Debug.Log("点击了jump按钮"+Started);
-    }
-    private void OnDisable()
-    {
-        _inputReader.JumpStartedEvent -= OnJumpStarted;
-    }
     void Start()
     {
         mIsJumpAnimatorHash = Animator.StringToHash("IsJump");
     }
     IEnumerator JumpCoroutine(Vector3 moveDirection, Vector3 upAxis)
     {
-        Debug.Log("执行跳跃");
+
         mGroundedDelay = Time.maximumDeltaTime * 2f;          //两帧延迟
         selfRigidbody.useGravity = false;                         //暂时关闭重力
         var t = arg.w;                                                  //时间插值
         do
         {
+            Debug.Log("执行跳跃");
             var t_riseCurve = riseCurve.Evaluate(t);          //上升力曲线采样
             //方向力曲线采样
             var t_directionJump = directionJumpCurve.Evaluate(t);
@@ -76,7 +61,7 @@ public class TestJump : MonoBehaviour
 
         //移到inputsystem接口里
         //
-        if (isStarted&&mJumpCoroutine == null && mIsGrounded)
+        if (Input.GetKeyDown(KeyCode.Space)&&mJumpCoroutine == null && mIsGrounded)
         {//执行跳跃
             mJumpCoroutine = StartCoroutine(JumpCoroutine(testMove.MoveDirection,
                 upAxis));
