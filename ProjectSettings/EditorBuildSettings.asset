@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ZFranework/Example/UIFrame/Scenes/Start.unity
+    guid: 1cf415275f1b9154cbbf85463085b7bf
+  - enabled: 1
+    path: Assets/ZFranework/Example/UIFrame/Scenes/Main.unity
+    guid: 3bede270d378b584499b3414b90e8264
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 30fdf5adb1a29504ab19eeef1b761878, type: 2}
