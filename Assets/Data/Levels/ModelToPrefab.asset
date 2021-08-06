@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7b98c04d9bdb64ab55e144eaff8444, type: 3}
+  m_Name: ModelToPrefab
+  m_EditorClassIdentifier: 
+  ModelPrefab: {fileID: 0}
+  Hair: Hair1,Hair1Half,Hair2,Hair2Half,Hair3,Hair3Half,Hair4,Hair4Half,Hair5,Hair5Half,
+  Face: Face1,Face3,Face4,
+  Weapon: Sword3_R_D,Sword4_R_D,Wand1_R_D,Wand2_R_D,
+  LeftWeapon: Axe1_L,Bow1_L,Bow2_L,Hammer1_L,Shield1_L,Shield2_L,Shield3_L,Shield4_L,Shield5_L,Sword1_L,Sword2_L,Sword3_L,Sword4_L,Wand1_L,Wand2_L,
+  RightWeapon: Arrow1_R,Arrow2_R,Axe1_R,Hammer1_R,Sword1_R,Sword2_R,
+  Cloth: Cloth1,Cloth2,Cloth3,Cloth4,Cloth5,Cloth6,Cloth7,
+  Glove: Glove1,Glove2,Glove3,Glove4,Glove5,Glove6,
+  Hat: Hat1,Hat2,Hat3,Helm1,Helm2,Helm3,Helm4,Helm5,Helm6,Helm7,
+  Shoe: Shoe1,Shoe2,Shoe3,Shoe4,Shoe5,Shoe6,
+  ShoulderPad: ShoulderPad1,ShoulderPad2,ShoulderPad3,ShoulderPad4,ShoulderPad5,ShoulderPad6,
+  Belt: Belt1,Belt2,Belt3,
+  Crown: Crown1,Crown2,Crown3,Crown4,

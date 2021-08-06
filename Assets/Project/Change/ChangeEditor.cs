@@ -22,7 +22,7 @@ public class ChangeEditor :OdinMenuEditorWindow
         tree.Add("预览面板", new PreviewPane());
         tree.Add("添加道具", new CharacterWrapper(Path));
         tree.Add("预览道具", new PreviewProps(Path,tree));
-        
+        tree.Add("模型装备信息分类",new ModelToPrefab(Path));
         return tree;
     }
 }
