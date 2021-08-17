@@ -84,7 +84,6 @@ public class CardMove : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 
             angle = startAngle + (index - halfSize) * deltaAngle;
             pageItem[index].GetTect.DOScale(1.5f-(normal*gap), 0.3f);
-            Debug.Log(index);
         }
         else
         {//medim
