@@ -135,10 +135,9 @@ public class CharacterWrapper : ScriptableObject
             UnityEditor.EditorUtility.DisplayDialog("警告", "文件结尾不是.asset不能创建，请填写Name", "确认");
             return;
         }
-
-        Debug.Log(Path);
-
+        
         var filePath = IOFileHelper.LoadFile(ConstPath, Name);
+        Debug.Log(filePath);
         if (filePath.Count > 0)
         {
             bool isdelete =

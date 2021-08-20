@@ -12,4 +12,5 @@ EditorBuildSettings:
     path: Assets/ZFranework/Example/UIFrame/Scenes/Main.unity
     guid: 3bede270d378b584499b3414b90e8264
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 9bb151ce381a4204dbebd66a850accfe, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 30fdf5adb1a29504ab19eeef1b761878, type: 2}
