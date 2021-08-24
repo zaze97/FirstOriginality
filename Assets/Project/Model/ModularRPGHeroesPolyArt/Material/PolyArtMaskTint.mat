@@ -8,17 +8,28 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PolyArtMaskTint
-  m_Shader: {fileID: 4800000, guid: f6f5585657a47374181de5ea8c44320e, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 312287db01f81394bb56a3325b73989c,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_55FDBEBE:
+        m_Texture: {fileID: 2800000, guid: 40c7ccbe7c8f5074b8fa9cf1d5fa099d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_811EFFB:
+        m_Texture: {fileID: 2800000, guid: 32141fc092ae4894d8d37eac360bd5d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _PolyArtAlbedo:
         m_Texture: {fileID: 2800000, guid: 32141fc092ae4894d8d37eac360bd5d5, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -32,11 +43,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_9E544DC: 0
+    - Vector1_C81540A2: 0.13
+    - Vector1_F1794ABA: 6
     - _Metallic: 0.4
-    - _Smoothness: 0.55
+    - _Smoothness: 0
     - __dirty: 1
     m_Colors:
+    - Color_22DC93C2: {r: 0.27043957, g: 0.4056604, b: 0.08610717, a: 1}
+    - Color_31457282: {r: 0.43447247, g: 0.6320754, b: 0.08646317, a: 1}
+    - Color_E64BA0E: {r: 0.33777395, g: 0.7075472, b: 0.103462085, a: 0}
     - _Color01: {r: 0.2260336, g: 0.5955882, b: 0.013137988, a: 0}
     - _Color02: {r: 0.12673008, g: 0.42647058, b: 0.031358134, a: 0}
     - _Color03: {r: 0.03589963, g: 0.42647058, b: 0.021950686, a: 0}
-  m_BuildTextureStacks: []

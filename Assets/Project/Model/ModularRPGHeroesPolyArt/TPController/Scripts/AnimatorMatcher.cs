@@ -29,7 +29,7 @@ namespace DM
                 return;
 
             control.rigid.drag = 0;
-            float multiplier = 3f;
+            float multiplier = 2f;
 
             dPosition = anim.deltaPosition;   //storing delta positin of active model's position.         
             

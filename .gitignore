@@ -62,7 +62,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 /Library/
-/ZFranework/
+/Franework/
 /Logs/
 /UserSettings/
 /.idea/
@@ -76,3 +76,7 @@ Assets/ModularRPGHeroesPolyArt/SRP/Polyart_HD.zip.meta
 Assets/ModularRPGHeroesPolyArt/SRP/Polyart_LW.zip
 
 Assets/ModularRPGHeroesPolyArt/SRP/Polyart_LW.zip.meta
+
+Assets/GUI Pro Kit Fantasy RPG/Sprites/
+
+Assets/GUI Pro Kit Fantasy RPG/PSD/
