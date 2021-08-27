@@ -52,11 +52,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: c75c790bb1b0f4611aca4266d6a1f2e6, type: 3}
     totalSpriteSurfaceArea: 26214400
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 8292e50084af245549facd3fa1470f3b, type: 3}
@@ -260,5 +263,6 @@ SpriteAtlas:
   - common_item_key_silver
   - common_item_megaphone
   - common_item_coin_vertical_5
+  m_RenderDataMap: {}
   m_Tag: 00_ItemIcos512x512
   m_IsVariant: 0

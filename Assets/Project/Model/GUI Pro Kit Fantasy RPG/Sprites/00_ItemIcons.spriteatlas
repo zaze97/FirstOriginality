@@ -52,11 +52,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 68d7a84306ffc41d38f0d0640974302f, type: 3}
     totalSpriteSurfaceArea: 1308411
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ba5f0e4099c5a41ebb98b37abad0e92d, type: 3}
@@ -240,5 +243,6 @@ SpriteAtlas:
   - common_item_skull
   - common_item_bomb
   - common_item_anvil
+  m_RenderDataMap: {}
   m_Tag: 00_ItemIcons
   m_IsVariant: 0

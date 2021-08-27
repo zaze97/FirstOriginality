@@ -52,11 +52,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 27349c6cdab2f4313bad7acef478561a, type: 3}
     totalSpriteSurfaceArea: 1049897
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 7c590330b56f5478fa08eebb283dff0c, type: 3}
@@ -122,5 +125,6 @@ SpriteAtlas:
   - character_bottom_bg
   - role_icon_priest
   - role_icon_frame
+  m_RenderDataMap: {}
   m_Tag: 02_Character
   m_IsVariant: 0

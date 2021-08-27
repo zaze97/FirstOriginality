@@ -52,11 +52,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: e63461c88a526421db507fd54b53aad9, type: 3}
     totalSpriteSurfaceArea: 3749794
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 2396a10008e8a4e3b82d1c1ff2550071, type: 3}
@@ -94,5 +97,6 @@ SpriteAtlas:
   - roulette_btn_spin
   - roulette_icon_key_silver
   - roulette_illust_bg
+  m_RenderDataMap: {}
   m_Tag: 16_Roulette
   m_IsVariant: 0

@@ -52,11 +52,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 629089a108f6b4f34bfee6493c5e658a, type: 3}
     totalSpriteSurfaceArea: 471918
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: e46ace51a53d94d12b2e0692131eda27, type: 3}
@@ -68,5 +71,6 @@ SpriteAtlas:
   - play_boss_text_warning
   - play_boss_bg_glow_0
   - play_boss_title_icon
+  m_RenderDataMap: {}
   m_Tag: 06_PalyBoss
   m_IsVariant: 0

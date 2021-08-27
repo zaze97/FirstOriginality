@@ -52,11 +52,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: f605e1600848845c88426f4d70399223, type: 3}
     totalSpriteSurfaceArea: 2293760
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 7e88fb1030760496d8b62c897735ec9f, type: 3}
@@ -130,5 +133,6 @@ SpriteAtlas:
   - equip_eye_blue
   - equip_potion_red_0
   - equip_potion_blue_3
+  m_RenderDataMap: {}
   m_Tag: 00_EquipmentIcons_256x256
   m_IsVariant: 0
