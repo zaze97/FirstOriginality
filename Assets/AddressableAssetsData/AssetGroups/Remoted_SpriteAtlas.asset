@@ -10,24 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Local_SpriteAtlas
+  m_Name: Remoted_SpriteAtlas
   m_EditorClassIdentifier: 
-  m_GroupName: Local_SpriteAtlas
+  m_GroupName: Remoted_SpriteAtlas
   m_Data:
     m_SerializedData: []
-  m_GUID: 325dc338b2f1f914ba2c8af9be9b9510
-  m_SerializeEntries:
-  - m_GUID: d4c57894cb6452f4db41069b49356d9a
-    m_Address: Loading
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Loading.spriteatlas
-    - SpriteAtlas
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+  m_GUID: 2b9ce761dc3c9764b880077ddc8b9f43
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 646e4ed861830ed469c2aa740ee85706, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 1ed5148b9557177458e76a05aa53b664, type: 2}
-    - {fileID: 11400000, guid: 09bc054208bcaf246ba1769926275568, type: 2}
+    - {fileID: 11400000, guid: 00093171277b10e42b7895ce72e374c7, type: 2}
+    - {fileID: 11400000, guid: d50b9e03e3748244cb68d7ea06b02dbc, type: 2}

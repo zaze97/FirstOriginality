@@ -5,7 +5,6 @@ using System.Text;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.AddressableAssets.Settings;
-#endif
 using System.Reflection;
 public static class BuildTools
 {
@@ -192,3 +191,4 @@ public static class BuildTools
         AssetDatabase.Refresh();
     }
 }
+#endif

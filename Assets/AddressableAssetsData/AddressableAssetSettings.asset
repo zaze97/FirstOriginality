@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DefaultGroup: f903094c0de50fb4d824ac253ac9ccfd
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_DisableCatalogUpdateOnStart: 0
   m_IgnoreUnsupportedFilesInBuild: 0
@@ -36,6 +36,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 43f365e0d5c03d24781252eae77d61ad, type: 2}
   - {fileID: 11400000, guid: 6ff9b9568e8310a4998ebbd4f3ffc0e5, type: 2}
   - {fileID: 11400000, guid: 118cc080229d20f49bfdd92fb15b3a26, type: 2}
+  - {fileID: 11400000, guid: 5632b847c1c434c4f9e8aa7846dc8153, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -152,7 +153,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6bea7451fd22f654d888445eb05e92f7, type: 2}
   - {fileID: 11400000, guid: 274616812f23e3b4fa39b76a7050fd5d, type: 2}
   - {fileID: 11400000, guid: c255a82a62ea0fe47b61964bf8cb4d2c, type: 2}
-  m_ActiveProfileId: 29bc23fa4b9881e46b4cb3ef7c38b2c4
+  m_ActiveProfileId: 28b1a8ba4b1d351448fe69d4f010a7ca
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
