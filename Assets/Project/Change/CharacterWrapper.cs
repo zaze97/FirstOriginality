@@ -255,3 +255,4 @@ public class CharacterWrapper : ScriptableObject
         剑_右 = 3,
     }
 }
+
