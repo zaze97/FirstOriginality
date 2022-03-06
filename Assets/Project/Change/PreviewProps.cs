@@ -16,7 +16,7 @@ public class PreviewProps : ScriptableObject
         
         tree.AddAllAssetsAtPath("预览道具", ConstPath+"Change", typeof(ScriptableObject), true, true);
             //添加指定的Icon
-         tree.EnumerateTree().AddIcons<CharacterWrapper>(x => x.Icon);
+        tree.EnumerateTree().AddIcons<CharacterWrapper>(x => x.Icon);
 
          
          

@@ -19,10 +19,14 @@ public class ChangeEditor :OdinMenuEditorWindow
     {
         var tree = new OdinMenuTree();
         tree.Selection.SupportsMultiSelect = false;
-        tree.Add("预览面板", new PreviewPane());
-        tree.Add("添加道具", new CharacterWrapper(Path));
-        tree.Add("预览道具", new PreviewProps(Path,tree));
-        tree.Add("模型装备信息分类",new ModelToPrefab(Path));
+        // tree.Add("预览面板", new PreviewPane());
+        // tree.Add("添加道具", new CharacterWrapper(Path));
+        // tree.Add("预览道具", new PreviewProps(Path,tree));
+        // tree.Add("模型装备信息分类",new ModelToPrefab(Path));
+        
+        tree.AddAllAssetsAtPath("预览道具", Path+"Change", typeof(ScriptableObject), true, true);
+        //添加指定的Icon
+        tree.EnumerateTree().AddIcons<CharacterWrapper>(x => x.Icon);
         return tree;
     }
 }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Local_Atlas_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: 4bd6bac3a93663a4993f09498a36b5e0, type: 2}
-  m_StaticContent: 0
+  m_StaticContent: 1

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Local_Prefab_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: 5ce9596d93dce544a8f82bba87a8ce99, type: 2}
-  m_StaticContent: 0
+  m_StaticContent: 1
